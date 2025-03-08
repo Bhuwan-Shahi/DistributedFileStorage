@@ -16,5 +16,8 @@ func TestTCPTransport(t *testing.T) {
 	tr := NewTCPTransport(opts)                   // Fixed to pass TCPTransportOps
 	assert.Equal(t, tr.listenAddress, listenAddr) // Kept as is, but note it won’t work
 	assert.Nil(t, tr.ListenAndAccept())
-	select {}
+	select {}select {
+	case condition:
+		
+	}
 }
